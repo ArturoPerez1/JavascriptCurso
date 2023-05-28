@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style type="text/css">
+			p
+			{
+     		  font-size: 26px;
+			}
+			
+			h1
+			{
+	 		  font-size: 45px;
+			}
+	
+			canvas
+			{
+		      background-color: white; 
+			}
+	
+			body
+			{
+		      background-color: #CC8903;
+			}
+		</style>
+		
+		<meta charset="utf-8"/>
+	    <title>Dibujando con el mause</title>
+	</head>
+	
+	<body>
+
+      <h1>Bienvenido a ArthurPaint</h1>
+      <p>Dale vida a tus ideas dibujando en esta pizarra</p>
+
+	  <p>
+		Escoja una de estas cuatro opciones
+		<br><input type="button" value="làpiz" id="botonDibujar"/> 
+		<input type="button" value="borradorTotal" id="botonBorrador"/>
+		
+		<input type="text"  id="grueso">
+		<input type="button" value="cambiarGrueso" id="tamaño">
+
+		<p>Introduzca el  color deseado en "inglès" o "hexadecimal"</p> 
+		<input type="text"  id="colorcito">
+		<input type="button" value="cambiarColor" id="colores">
+	
+	  </p>	
+	  <canvas width="1500" height="500" id="dibujito"> </canvas>
+
+      <script src= "eventoMause.js"></script>
+    </body>
+</html>
